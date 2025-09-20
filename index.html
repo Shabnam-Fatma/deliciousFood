@@ -1,289 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
 
-<body>
-
+  <body>
     <nav class="navbar">
-        <div class="logo">FOOD<span>EAT</span></div>
+      <div class="logo">FOOD<span>EAT</span></div>
 
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#menu">Menu</a>
-            <a href="#about">About</a>
-            <a href="#features">Features</a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </div>
 
-        </div>
+      <button id="menuBtn" class="mobile-menu">☰</button>
 
-        <div class="hamburger">
-            <i class="fa-solid fa-bars"></i>
-        </div>
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <button id="closeBtn">✖</button>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
+
+    <!-- Overlay -->
+    <div id="overlay"></div>
 
     <!-- navbar-end........................................... -->
 
     <section class="hero" id="home">
+      <div class="hero-contant">
+        <h1>Delicious Food Is Waiting For You</h1>
 
-        <div class="hero-contant">
-            <h1>Delicious Food Is Waiting For You</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni saepe,
+          aliquam vero explicabo ea, impedit possimus fugiat quod velit
+          reprehenderit veniam maxime mollitia placeat et, fuga debitis itaque
+          at! Facilis.
+        </p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Magni saepe, aliquam vero explicabo ea, impedit
-                possimus fugiat quod velit reprehenderit veniam maxime
-                mollitia placeat et, fuga debitis itaque at!
-                Facilis.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#menu" class="btn btn-primary">Food Menu</a>
-                <a href="#book" class="btn btn-secondary">Book Table</a>
-            </div>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-primary">Food Menu</a>
+          <a href="#book" class="btn btn-secondary">Book Table</a>
         </div>
+      </div>
 
-        <div class="hero-image">
-            <img src="assets/1.png" alt="food plate" class="rotating">
-        </div>
+      <div class="hero-image">
+        <img src="assets/1.png" alt="food plate" class="rotating" />
+      </div>
     </section>
-
 
     <!-- hero-end........................................... -->
 
-
     <section class="top-list" id="menu">
+      <h2>Top List</h2>
+      <p class="our">Our top list</p>
 
-        <h2>Top List</h2>
-        <p class="our">Our top list</p>
+      <div class="food-card">
+        <div class="food">
+          <div class="food-image">
+            <img src="assets/3.png" alt="food-1" />
+          </div>
 
-        <div class="food-card">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
 
-            <div class="food">
-                <div class="food-image">
-                    <img src="assets/3.png" alt="food-1">
-                </div>
-
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-
-                <h3 class="food-name">Food Name 1</h3>
-                <p class="food-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                <p class="food-price">30$</p>
-            </div>
-
-            <div class="food">
-                <div class="food-image">
-                    <img src="assets/4.png" alt="food-1">
-                </div>
-
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-
-                <h3 class="food-name">Food Name 1</h3>
-                <p class="food-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                <p class="food-price">20$</p>
-            </div>
-
-            <div class="food">
-                <div class="food-image">
-                    <img src="assets/5.png" alt="food-1">
-                </div>
-
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-
-                <h3 class="food-name">Food Name 1</h3>
-                <p class="food-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                <p class="food-price">10$</p>
-            </div>
-
+          <h3 class="food-name">Food Name 1</h3>
+          <p class="food-description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+          <p class="food-price">30$</p>
         </div>
+
+        <div class="food">
+          <div class="food-image">
+            <img src="assets/4.png" alt="food-1" />
+          </div>
+
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+          <h3 class="food-name">Food Name 1</h3>
+          <p class="food-description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+          <p class="food-price">20$</p>
+        </div>
+
+        <div class="food">
+          <div class="food-image">
+            <img src="assets/5.png" alt="food-1" />
+          </div>
+
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+          <h3 class="food-name">Food Name 1</h3>
+          <p class="food-description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+          <p class="food-price">10$</p>
+        </div>
+      </div>
     </section>
 
     <!-- food-card-end........................................... -->
 
     <section class="features" id="features">
+      <h2>Why Choose Us</h2>
+      <p class="Our">Experience the Difference</p>
 
-        <h2>Why Choose Us</h2>
-        <p class="Our">Experience the Difference</p>
-
-        <div class="feature-grid">
-
-            <div class="feature-card">
-                <div class="feauture-icons">
-                    <i class="fas fa-truck-fast"></i>
-                </div>
-                <h3>Fast Delivery</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Accusamus aperiam sapiente, aspernatur
-                    dicta reiciendis fugiat.
-                </p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feauture-icons">
-                    <i class="fas fa-leaf"></i>
-                </div>
-                <h3>Fresh Food</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Accusamus aperiam sapiente, aspernatur
-                    dicta reiciendis fugiat.
-                </p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feauture-icons">
-                    <i class="fas fa-headset"></i>
-                </div>
-                <h3>24/7 Support</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Accusamus aperiam sapiente, aspernatur
-                    dicta reiciendis fugiat.
-                </p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feauture-icons">
-                    <i class="fas fa-gift"></i>
-                </div>
-                <h3>Special Offers</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Accusamus aperiam sapiente, aspernatur
-                    dicta reiciendis fugiat.
-                </p>
-            </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feauture-icons">
+            <i class="fas fa-truck-fast"></i>
+          </div>
+          <h3>Fast Delivery</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus
+            aperiam sapiente, aspernatur dicta reiciendis fugiat.
+          </p>
         </div>
+
+        <div class="feature-card">
+          <div class="feauture-icons">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h3>Fresh Food</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus
+            aperiam sapiente, aspernatur dicta reiciendis fugiat.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feauture-icons">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3>24/7 Support</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus
+            aperiam sapiente, aspernatur dicta reiciendis fugiat.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feauture-icons">
+            <i class="fas fa-gift"></i>
+          </div>
+          <h3>Special Offers</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus
+            aperiam sapiente, aspernatur dicta reiciendis fugiat.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- feature-card-end........................................... -->
 
     <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">Food <span>EAT</span></div>
 
-        <div class="footer-content">
-            <div class="footer-section">
+          <p class="footer-description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus
+            nemo expedita atque, ipsa minima, aliquid temporibus odit delectus
+            commodi quod blanditiis placeat exercitationem soluta perferendis
+            distinctio minus rem. Ut, accusamus.
+          </p>
 
-                <div class="footer-logo">
-                    Food <span>EAT</span>
-                </div>
+          <div class="social-links">
+            <a href="#" class="social">
+              <i class="fab fa-facebook"></i>
+            </a>
 
-                <p class="footer-description">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Doloribus nemo expedita atque, ipsa
-                    minima, aliquid temporibus odit delectus commodi
-                    quod blanditiis placeat exercitationem soluta
-                    perferendis distinctio minus rem. Ut, accusamus.
-                </p>
-
-                <div class="social-links">
-                    <a href="#" class="social">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-
-                    <a href="#" class="social">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="social">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="social">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-
-                </div>
-            </div>
-
-            <!-- footer-section-2............................ -->
-
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#features">Features</a></li>
-                </ul>
-            </div>
-
-            <!-- footer-section-3............................ -->
-
-            <div class="footer-section">
-                <h3>Contact Info</h3>
-
-                <ul class="contant-info">
-
-                    <li>
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>123 Restaurant Street, Food City, FC 12345</span>
-                    </li>
-
-                    <li>
-                        <i class="fas fa-phone"></i>
-                        <span>+1 234 567 8900</span>
-                    </li>
-
-                    <li>
-                        <i class="fas fa-envelope"></i>
-                        <span>info@fooddeat.com</span>
-                    </li>
-
-                    <li>
-                        <i class="fas fa-clock"></i>
-                        <span>mon-sun: 10:00 AM - 11:00 PM</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- footer-section-4............................ -->
-
-            <div class="footer-section">
-                <h3>Newsletter</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur
-                    adipisicing elit. Dignissimos,
-                    voluptatem.
-                </p>
-                <form class="Newsletter" >
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit">
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </form>
-            </div>
+            <a href="#" class="social">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
         </div>
 
-        <!-- footer-sections-and-content-end.............................. -->
+        <!-- footer-section-2............................ -->
 
-        <div class="footer-bottom">
-            <p>&copy: 2024 FOODEAT. ALL rights reserved.</p>
-            <div class="footer-bottom-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms & Condition</a>
-            </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+          </ul>
         </div>
-        
+
+        <!-- footer-section-3............................ -->
+
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+
+          <ul class="contant-info">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>123 Restaurant Street, Food City, FC 12345</span>
+            </li>
+
+            <li>
+              <i class="fas fa-phone"></i>
+              <span>+1 234 567 8900</span>
+            </li>
+
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>info@fooddeat.com</span>
+            </li>
+
+            <li>
+              <i class="fas fa-clock"></i>
+              <span>mon-sun: 10:00 AM - 11:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- footer-section-4............................ -->
+
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Dignissimos, voluptatem.
+          </p>
+          <form class="Newsletter">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- footer-sections-and-content-end.............................. -->
+
+      <div class="footer-bottom">
+        <p>&copy: 2024 FOODEAT. ALL rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Condition</a>
+        </div>
+      </div>
     </footer>
 
-
-    <script src="scrip.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
