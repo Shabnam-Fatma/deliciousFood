@@ -36,6 +36,7 @@ Food-EAT/
 ├── index.html
 ├── style.css
 ├── script.js
+├── README.md
 ├── netlify.toml
 │
 └── assets/
